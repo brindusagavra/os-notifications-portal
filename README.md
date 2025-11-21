@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OS Notifications Portal
+
+A web-based notification system portal built with Next.js, Tailwind CSS, and TypeScript.
+
+## Features
+- **Notification Center**: Real-time alerts for messages, stock updates, and security events.
+- **Simulation Tools**: Trigger custom notifications to test the system.
+- **User Preferences**: Enable/disable specific notification types in Settings.
+- **Standalone Demo**: A single-file HTML version for easy sharing.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or newer) installed on your machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
+1.  Clone the repository (if you haven't already):
+    ```bash
+    git clone https://github.com/YOUR_USERNAME/os-notifications-portal.git
+    cd os-notifications-portal
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the Application
+1.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+2.  Open your browser and visit: [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Use
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. The Dashboard
+The home page allows you to simulate different events:
+- **Simulate New Message**: Opens a modal to send a custom message.
+- **Simulate Stock Alert**: Opens a modal to report low stock for a specific item.
+- **Simulate Access Request**: Simulates a security alert for a user login.
 
-## Learn More
+### 2. Notification Center
+Click the **Bell Icon** in the top right to see your notifications.
+- **Red Badge**: Shows the number of unread notifications.
+- **Mark as Read**: Click the checkmark next to a notification to mark it as read.
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Settings
+Click **Go to Settings** or navigate to `/settings`.
+- Toggle switches to enable or disable specific notification types.
+- **Note**: If you disable a type (e.g., "Stock Alerts"), the corresponding simulation button on the dashboard will be disabled.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Standalone Demo
+If you want to share a quick demo without running the server, you can use the standalone HTML file:
+- Locate `public/demo.html` in the project folder.
+- Double-click it to open in any browser.
+- It contains all the core functionality in a single file!
