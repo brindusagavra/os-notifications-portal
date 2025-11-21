@@ -6,7 +6,6 @@ A web-based notification system portal built with Next.js, Tailwind CSS, and Typ
 - **Notification Center**: Real-time alerts for messages, stock updates, and security events.
 - **Simulation Tools**: Trigger custom notifications to test the system.
 - **User Preferences**: Enable/disable specific notification types in Settings.
-- **Standalone Demo**: A single-file HTML version for easy sharing.
 
 ## Getting Started
 
