@@ -49,8 +49,3 @@ Click **Go to Settings** or navigate to `/settings`.
 - Toggle switches to enable or disable specific notification types.
 - **Note**: If you disable a type (e.g., "Stock Alerts"), the corresponding simulation button on the dashboard will be disabled.
 
-## Standalone Demo
-If you want to share a quick demo without running the server, you can use the standalone HTML file:
-- Locate `public/demo.html` in the project folder.
-- Double-click it to open in any browser.
-- It contains all the core functionality in a single file!
